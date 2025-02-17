@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variables & Custom Properties</title>
+    <style>
+        .root{
+            --primary-color:blue;
+            --danger-color:red;
+            --maxw:733px;
+        }
+        .box{
+            --box-color:violet;
+            width: 100;
+            height: 200;
+            background-color: aquamarine;
+            border: 2px solid red;
+            box-shadow: 3px 3px var(--box-color);
+            margin:2px 9px ;
+        }
+        .container{
+            display: flex;
+            justify-content: center;
+            margin: 0;
+            padding: 0;
+            border: 10px solid red;
+        }
+        
+        </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box" id="item">home</div>
+        <div class="box" id="item">about</div>
+        <div class="box" id="item">creat</div>
+        <div class="box" id="item">recycle</div>
+    </div>
+</body>
+</html>
